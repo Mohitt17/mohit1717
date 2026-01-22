@@ -1,0 +1,8 @@
+body{background-color: rgb(100, 173, 194);}
+.bar div{
+    background-color: #4caf50;
+    height:20;
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+}

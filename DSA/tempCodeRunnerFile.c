@@ -1,0 +1,2 @@
+if (t == NULL)
+    //     return;
