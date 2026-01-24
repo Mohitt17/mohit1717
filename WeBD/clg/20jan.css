@@ -1,0 +1,47 @@
+footer input[type="submit"] {
+    background-color: white;
+    color: #00695c;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+footer input[type="submit"]:hover {
+    background-color: #004d40;
+    color: white;
+}
+
+footer {
+    background-color: #00695c;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+#name{
+    background-color:gray;
+    color: aliceblue;
+    margin: 5px;
+    border-style:inset;
+    border-width: 3px;
+    border-color: rgb(36, 36, 40);
+    outline-style: outset;
+    outline-color: rgb(45, 38, 38);
+
+}
+body{
+    background-color: antiquewhite;
+
+
+}
+h1{
+    background-color: aqua;
+    text-align: center;
+    border-radius: 50px;
+    
+}

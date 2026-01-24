@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #e0f7fa, #ffffff);
+    color: #333;
+}
+
+/* Navbar */
+nav {
+    background: #004d40;
+    color: white;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h2 {
+    letter-spacing: 1px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ffeb3b;
+}
+
+/* Headings */
+h1 {
+    text-align: center;
+    margin: 30px 0;
+    color: #004d40;
+}
+
+h3 {
+    color: #00695c;
+    margin-bottom: 10px;
+}
+
+h4 {
+    margin-top: 20px;
+    color: #004d40;
+}
+
+/* Sections (portfolio cards) */
+section {
+    background: white;
+    width: 80%;
+    margin: 25px auto;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+/* Inputs */
+#name {
+    width: 260px;
+    padding: 9px;
+    margin: 10px 0 15px;
+    border-radius: 8px;
+    border: 2px solid #ccc;
+}
+
+#name:focus {
+    border-color: #004d40;
+    outline: none;
+}
+
+/* Radio / checkbox */
+input[type="radio"],
+input[type="checkbox"] {
+    margin: 6px;
+}
+
+/* Skills list */
+#skills ul {
+    margin-left: 20px;
+}
+
+#skills li {
+    margin-bottom: 8px;
+}
+
+/* Footer */
+footer {
+    background: #004d40;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+}
+
+/* Button */
+footer input[type="submit"] {
+    background: white;
+    color: #004d40;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+footer input[type="submit"]:hover {
+    background: #00695c;
+    color: white;
+}
