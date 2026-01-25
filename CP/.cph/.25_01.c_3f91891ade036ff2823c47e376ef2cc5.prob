@@ -1,0 +1,1 @@
+{"name":"Local: 25_01","url":"c:\\Users\\Dell\\OneDrive\\Desktop\\code\\mohit1717\\CP\\25_01.c","tests":[{"id":1769324398298,"input":"2\n4\n3 -4 5\n11\n-30 12 -57 7 0 -81 -68 41 -89 0\n","output":"-4\n265\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\Dell\\OneDrive\\Desktop\\code\\mohit1717\\CP\\25_01.c","group":"local","local":true}
