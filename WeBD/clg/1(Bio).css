@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f4f6f8;
+    color: #222;
+    scroll-behavior: smooth;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+    background: #1f2933;
+    color: white;
+    position: sticky;
+    top: 0;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav a, nav button {
+    color: white;
+    text-decoration: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Hero */
+.hero {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #4caf50, #2e7d32);
+    color: white;
+}
+
+.hero span {
+    color: #ffeb3b;
+}
+
+.btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #222;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+/* Sections */
+.section {
+    padding: 60px 15%;
+}
+
+.section h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Skills */
+.skill {
+    margin-bottom: 20px;
+}
+
+.bar {
+    height: 16px;
+    background: #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.fill {
+    height: 100%;
+    width: 0;
+    background: #4caf50;
+    transition: width 1.5s;
+}
+
+/* Education */
+.edu li {
+    margin: 10px 0;
+}
+
+/* Contact */
+.contact {
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #1f2933;
+    color: white;
+}
+
+/* Dark Mode */
+.dark {
+    background: #121212;
+    color: #eee;
+}
+
+.dark nav,
+.dark footer {
+    background: #000;
+}
+
+.dark .bar {
+    background: #444;
+}
+
+/* Scroll Button */
+#topBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px;
+    border-radius: 50%;
+    border: none;
+    display: none;
+    cursor: pointer;
+}
