@@ -1,0 +1,1 @@
+{"name":"Local: 30jan1","url":"c:\\Users\\Dell\\OneDrive\\Desktop\\code\\mohit1717\\CP\\30jan1.c","tests":[{"id":1769794113807,"input":"4\n1 1 1\n2 1 2\n3 1 1\n4 1 1\n","output":"Yes\nNo\nNo\nYes\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\Dell\\OneDrive\\Desktop\\code\\mohit1717\\CP\\30jan1.c","group":"local","local":true}
