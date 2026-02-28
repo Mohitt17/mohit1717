@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Simple To-Do List</title>
+<style>
+body {
+font-family: Arial;
+text-align: center;
+margin-top: 50px;
+}
+input {
+padding: 8px;
+}
+button {
+padding: 8px 12px;
+background-color: antiquewhite;
+}
+li {
+cursor: pointer;
+margin: 5px;
+background-color: lightgray;
+padding: 5px;
+list-style: none;
+}
+</style>
+</head>
+<body>
+<h2>To-Do List</h2>
+<input type="text" id="task" placeholder="Enter task">
+
+<button onclick="manageTask(this)">Add</button>
+<ul id="list"></ul>
+<script>
+function manageTask(element) {
+// If button clicked → add task
+if (element.tagName === "BUTTON") {
+let taskText = document.getElementById("task").value;
+if (taskText === "") return;
+let li = document.createElement("li");
+li.innerText = taskText;
+li.onclick = function() { manageTask(this); };
+document.getElementById("list").appendChild(li);
+document.getElementById("task").value = "";
+}
+// If list item clicked → remove task
+else if (element.tagName === "LI") {
+element.remove();
+}
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Profile</title>
+</head>
+<style>
+    h1 {
+        text-align: center;
+        margin-left: 5px;
+        margin-right: 5px;
+        padding: 7px;
+        border-radius: 5px;
+        background-color: blanchedalmond;
+    }
+
+    main {
+        border-radius: 5px;
+        background-color: antiquewhite;
+        border: 2;
+        border-width: 2px;
+        border-color: black;
+        margin-left: 5px;
+        margin-right: 5px;
+        padding: 7px;
+    }
+
+    div {
+        text-align: center;
+        border-radius: 5px;
+        background-color: antiquewhite;
+        border: 2;
+        border-width: 2px;
+        border-color: black;
+        margin-top: 7px;
+        margin-left: 5px;
+        margin-right: 5px;
+        padding: 7px;
+    }
+
+    footer {
+        text-align: center;
+        border-radius: 5px;
+        background-color: antiquewhite;
+        border: 2;
+        border-width: 2px;
+        border-color: black;
+        margin-top: 7px;
+        margin-left: 5px;
+        margin-right: 5px;
+        padding: 7px;
+    }
+
+    #ph {
+        border-radius: 200px;
+        width: 80px;
+
+    }
+
+    div2 {
+        text-align: center;
+    }
+
+    #size {
+        background-color: aqua;
+        color: rgb(167, 172, 65);
+    }
+</style>
+
+<body style="font-size: 15px; background-color: rgb(67, 94, 107); text-align: center;">
+
+    <h1>My Profile</h1>
+
+    <main>
+        <img src="img.png" id="ph">
+        <div2>
+            <b style="margin-left: 60px;">Name:-</b>Mohit Lamba<br>
+            <b style="margin-left: 150px;">Year:-</b>1st<br>
+            <b style="margin-left: 150px;">Semester:-</b>2<br>
+            <b style="margin-left: 150px;">Age:-</b>18<br>
+
+        </div2>
+
+    </main>
+    <footer>
+        <h3>Skills</h3>
+        <ul>
+            <li>C</li>
+            <li>C++</li>
+            <li>Css</li>
+            <li>Html</li>
+            <li>JavaScript</li>
+            <li>Java</li>
+            <li>Python</li>
+            <li>CP</li>
+        </ul>
+    </footer>
+    <div>
+        <h3>Contact us</h3>
+        <ul>
+            <li>Mobile no.:- 9838483439</li>
+            <li>Email:- 1234535@email.com</li>
+            <li><a href="#">Instagram</a><img src="img1.png"> </li>
+            <li><a href="#">Linkdin</a><img src="img1.png"> </li>
+            <li><a href="#">Twitter</a><img src="img1.png"> </li>
+
+        </ul>
+    </div>
+    <br>
+    <button id="size" onclick="sizer(1)">Small</button>
+    <button id="size" onclick="sizer(2)">Medium</button>
+    <button id="size" onclick="sizer(3)">Large</button>
+
+
+    <script>
+        // let y = document.body.style.fontSize;
+        // let a = " ";
+        function sizer(a) {
+            if (a === 1) {
+                // y = "12" + px;
+                document.body.style.fontSize = "12px";
+
+            }
+            else if (a === 2) {
+                // y = "16" + px;
+                document.body.style.fontSize = "16px";
+            }
+            else if (a === 3) {
+                // y = "20" + px;
+                document.body.style.fontSize = "20px";
+            }
+        }
+
+    </script>
+</body>
+
+</html>

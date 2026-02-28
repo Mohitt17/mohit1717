@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>All DOM Events in One</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    .box {
+      width: 150px;
+      height: 150px;
+      background: lightblue;
+      margin: 10px 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+    ul {
+      border: 2px solid #444;
+      padding: 10px;
+    }
+    li {
+      cursor: pointer;
+      margin: 5px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>DOM Event Handling – One Code</h2>
+
+  <!-- Click / Mouse Events -->
+  <div class="box" id="box">Hover / Click Me</div>
+
+  <!-- Keyboard / Input Events -->
+  <input type="text" id="textInput" placeholder="Type something..." />
+
+  <!-- Change Event -->
+  <select id="selectBox">
+    <option value="">Choose</option>
+    <option value="JS">JavaScript</option>
+    <option value="HTML">HTML</option>
+  </select>
+
+  <!-- Form Submit -->
+  <form id="myForm">
+    <input type="text" placeholder="Enter name" required />
+    <button type="submit">Submit</button>
+  </form>
+
+  <!-- Event Delegation -->
+  <h3>Event Delegation</h3>
+  <ul id="list">
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+  </ul>
+
+  <script>
+    // Click / Double Click / Mouse Events
+    const box = document.getElementById("box");
+
+    box.addEventListener("click", () => {
+      console.log("Box clicked");
+    });
+
+    box.addEventListener("dblclick", () => {
+      console.log("Box double-clicked");
+    });
+
+    box.addEventListener("mouseover", () => {
+      box.style.background = "lightgreen";
+    });
+
+    box.addEventListener("mouseout", () => {
+      box.style.background = "lightblue";
+    });
+
+    // Keyboard & Input Events
+    const input = document.getElementById("textInput");
+
+    input.addEventListener("keydown", (e) => {
+      console.log("Key pressed:", e.key);
+    });
+
+    input.addEventListener("input", () => {
+      console.log("Current value:", input.value);
+    });
+
+    // Change Event
+    document.getElementById("selectBox").addEventListener("change", (e) => {
+      console.log("Selected:", e.target.value);
+    });
+
+    // Form Submit Event
+    document.getElementById("myForm").addEventListener("submit", (e) => {
+      e.preventDefault(); // stop page refresh
+      console.log("Form submitted");
+    });
+
+    // Event Delegation (Bubbling)
+    document.getElementById("list").addEventListener("click", (e) => {
+      if (e.target.tagName === "LI") {
+        console.log("Clicked:", e.target.textContent);
+      }
+    });
+  </script>
+
+</body>
+</html>
